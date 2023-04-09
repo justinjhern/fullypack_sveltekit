@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import Center from "../../../components/Center.svelte";
     /*
     -inside this page I have some text and a component called Text
@@ -6,7 +8,7 @@
     -components like this can be reused across your site making them useful
     -feel free to edit this component to make it better fit your needs
     */
-  </script>
+</script>
   
 <form action="action_page.php" method="post">
   <div class="imgcontainer">
@@ -28,6 +30,7 @@
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
+    <!-- svelte-ignore a11y-invalid-attribute -->
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
